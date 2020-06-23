@@ -1,0 +1,301 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Desarrollos web :: Sitios web - Aplicaciones web - Catalogos web :: Luj&aacute;n Buenos Aires 6700</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer/">
+	
+	<link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/funciones.js"></script>
+
+	<script type="text/javascript">
+		function cargaDatos(cliente,datos,web,img){
+
+			var strTit=cliente;
+			var strDatos=datos;
+			var strWeb=web;
+			var strImg="../img/clientes/"+img;
+
+			$('#titulo').text(strTit);
+			$('#datos').text(strDatos);
+			$('#link').attr("href", "http://"+strWeb);
+			$('#web').text(strWeb);
+			$('#imgWeb').attr('src',strImg);
+
+			location.href="#cargar";
+
+		}
+	</script>
+
+	<style type="text/css">
+
+		.detalle{
+			font-size: 0.8em;
+		}
+
+		.web{
+			font-weight: bold;
+			font-size: 0.8em;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="header" class="header">
+		
+	</div>
+	
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+	  <span class="navbar-brand mb-0 h1">SERINF</span>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="principal.htm">INICIO</a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="clientes.htm">CLIENTES <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../asp/contacto.asp">CONTACTO</a>
+	      </li>
+	    </ul>
+	    <span class="navbar-text">
+		  Servicios Informaticos
+		</span>
+	    
+	  </div>
+
+	</nav>
+
+	<br>
+
+	<div class="container">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><a href="principal.htm">Inicio</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Clientes</li>
+		  </ol>
+		</nav>
+	</div>	
+
+	<br>
+	
+	<div class="container">
+		<div id="clientes">
+			<div class="panel panel-default">
+		  		<div class="panel-body">
+				    <div class="row">
+				    	<div class="col-md-8">
+				    		<div class="row">
+				    			<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('La Posta Parrilla','Html5 -  ASP clasico -  Jquery -  Css - ','www.lapostaparrilla.com.ar', 'laposta.jpg')" id="Laposta">
+				            			La Posta Parrilla
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Cabañas Mapuche','Html5 - ASP clasico - JavaScript - Css - ','www.mapucheesquel.com.ar', 'mapuche.jpg')" id="Mapuche">
+				            			Cabañas Mapuche
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Satro S.A.','Html - ASP clasico - JavaScript - Css - ','www.satro.com.ar', 'satro.jpg')" id="Satro">
+				            			Satro S.A.
+									</button >
+								</div>
+							</div>
+							<div class="row">
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Todo Jardin','Html5 - ASP clasico - JavaScript - Css','www.atodojardin.com', 'todojardin.jpg')" id="TodoJardin">
+				            			Todo Jardin
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Dr. Cristian Barb&oacute;n','Html5 -  Css - -  ASP clasico','www.drcristianbarbon.com.ar', 'cristian.jpg')" id="drcristianbarbon">
+				            			Dr. Cristian Barb&oacute;n
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Pileta Punta Mansa','Html 5-  ASP clasico -  Jquery -  Css - ','www.piletapuntamansa.com', 'puntamansa.jpg')" id="puntamansa">
+				            			Pileta Punta Mansa
+									</button >
+								</div>
+				    		</div>
+				    		<div class="row">
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Moreno Store Center','Html5 - ASP clasico - JavaScript - Css - ','www.morenostorecenter.com.ar', 'storecenter.jpg')" id="morenostorecenter">
+				            			Moreno Store Center
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Román Traducciones','Html5 - ASP clasico - JavaScript - Css - ','www.romantraducciones.com.ar', 'roman.jpg')" id="Roman">
+				            			Roman Traducciones
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Acciardi Traductor','Html -  ASP clasico -  JavaScript - Css - ','www.acciarditraductor.com.ar', 'traductor.jpg')" id="Traductor">
+				            			Acciardi Traductor
+									</button >
+								</div>
+							</div>
+							<div class="row">
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Todo Altura','Html -  ASP clasico -  JavaScript -  Css - ','www.todoaltura.com.ar', 'todoaltura.jpg')" id="Altura">
+				            			Todo Altura
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Aberturas Saviotti','Html -  ASP clasico -  JavaScript -  Css - ','www.aberturassaviotti.com.ar', 'Saviotti.jpg')" id="Saviotti">
+				            			Aberturas Saviotti
+									</button >
+								</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Acciardi Propiedades','Html5 -  ASP.net -  SQL Server -  Jquery -  Css - Panel de control (AUTO GESTION DE PROPIEDADES)','www.acciardipropiedades.com.ar', 'Propiedades.jpg')" id="Acciardi">
+				            			Acciardi Propiedades
+									</button >
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Rural Perimetrales','Html 5 -  ASP clasico -  JavaScript - Css - ','www.ruralperimetrales.com.ar', 'Rural.jpg')" id="Rural">
+				            			Rural Perimetrales
+									</button >
+							  	</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Solar & Wind','Html5 - JavaScript -  Css - ASP clasico','www.solarwind.com.ar', 'solarwind.jpg')" id="Solar">
+				            			Solar & Wind
+									</button >
+							  	</div>
+							  	<div class="col-md-4">
+							  		&nbsp;
+							  	</div>
+							</div>
+							<div class="row">
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Unique Charm','Html5 -  ASP clasico -  Jquery -  Css - ','www.uniquecharm.com.ar', 'Unique.jpg')" id="Unique">
+				            			Unique Charm
+									</button >
+							  	</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('SegurosABC','Html5 -  Css -  ASP.net - SQL server','www.segurosabc.com.ar', 'segurosabc.jpg')" id="SegurosABC">
+				            			SegurosABC
+									</button >
+							  	</div>
+							  	<div class="col-md-4">
+							  		<button class="btn btn-link" onclick="cargaDatos('Estudio Acciardi','Html 5-  ASP.net - SQL Server -  JavaScript -  Css - ','www.estudioacciardi.com.ar', 'estudioacciardi.jpg')" id="estudio">
+				            			Estudio Acciardi
+									</button >
+							  	</div>
+							</div>
+							<div class="row">
+							  	<div class="col-md-12">
+							  		<button class="btn btn-link" onclick="cargaDatos('LG Steel','Html 5-  ASP.net - SQL Server -  JavaScript -  Css - ','www.lgaceroquirurgico.com', 'LGSteel.jpg')" id="LGSteel">
+				            			LG Steel
+									</button >
+							  	</div>
+							</div>
+				    	</div>
+				    	<div class="col-md-4" id="cargar">
+				    		<h3 class="modal-title" id="titulo"></h3>
+				    		<span id="datos"></span>
+				    		<a href="#" target="_blank" id="link">
+					        	<span id="web"></span>
+					        </a>
+					        <img src="" id="imgWeb" class="img-thumbnail">
+				    	</div>
+					</div>
+		  		</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		
+		<hr>
+
+		<div class="row">
+			<div class="col-xs-4">
+				<img src="../img/img01.png" class="figure-img img-fluid sitiosweb" onclick="contenido('sitios');">
+			</div>
+			<div class="col-xs-4">
+				<img src="../img/img02.png" class="figure-img img-fluid catalogosweb"   onclick="contenido('sistemas');">
+			</div>
+			<div class="col-xs-4">
+				<img src="../img/img03.png"  class="figure-img img-fluid sistemasweb"  onclick="contenido('catalogos');">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="container">
+				<br>
+				<div id="sitios"  class="oculto col-xs-12">	
+					<br>
+					<p class="servicios"><img src="../img/flecha.png" alt="" class="flecha"> &nbsp; Sitios Webs</p><br>
+					<div class="descripcion">
+						<img src="../img/ok.png" alt="">&nbsp;Simples y Rapidos. <br>
+						<img src="../img/ok.png" alt="">&nbsp;100% compatibles en PC - Notebook - Tablets - Celulares. <br>
+						<img src="../img/ok.png" alt="">&nbsp;No pierda tiempo en tener su espacio en INTERNET. <br>
+						<br>
+						<p class="frase">
+						No deje pasar mas timepo, tenga su sitio web. <strong>Lleve su emprendimiento a INTERNET</strong> y tenga su negocio virtual
+						</p>
+					</div>
+				</div>
+				<div id="catalogos"  class="oculto col-xs-12">
+					<br>
+					<p class="servicios"><img src="../img/flecha.png" alt="" class="flecha"> &nbsp; Catalogos Web</p><br>
+					<div class="descripcion">
+						<img src="../img/ok.png" alt="">&nbsp;Promocione todos susproductos <br>
+						<img src="../img/ok.png" alt="">&nbsp;100% compatibles en PC - Notebook - Tablets - Celulares. <br>
+						<img src="../img/ok.png" alt="">&nbsp;No pierda tiempo en tener su espacio en INTERNET. <br>
+						<br>
+						<p class="frase">
+						<strong>Arme su catalogo de productos</strong> con FOTOS, detalles del articulo, precio, etc.
+						</p>
+					</div>
+				</div>
+				<div id="sistemas"  class="oculto col-xs-12">
+					<br>
+					<p class="servicios"><img src="../img/flecha.png" alt="" class="flecha"> &nbsp; Aplicaciones Webs</p><br>
+					<div class="descripcion">
+						<img src="../img/ok.png" alt="">&nbsp;Obtenga datos en el momento. <br>
+						<img src="../img/ok.png" alt="">&nbsp;Ventas - Stocks - Clientes - etc. <br>
+						<img src="../img/ok.png" alt="">&nbsp;Maneje su NEGOCIO desde INTERNET.<br>
+						<br>
+						<p class="frase">
+							<strong>Acceda desde cualquier dispositivo.</strong> Obtenga los datos requeridos en cualquier momento y cualquier lugar.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<span class="text-muted">www.serinf.com.ar &copy; 2019</span>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</body>
+</html>

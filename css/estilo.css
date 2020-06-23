@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+/* nativo */
+
+	html {
+	  position: relative;
+	  min-height: 100%;
+	}
+
+	body {
+	  margin-bottom: 0px;
+	}
+
+	footer{
+		background-color: #ddd;
+	}
+
+	.container {
+	  width: auto;
+	  max-width: 90%;
+	  padding: 0 15px;
+	}
+
+	.breadcrumb{
+		background-color: #ddd;
+	}
+
+	.visible{display: block;}
+	.oculto{display: none !important;}
+
+	
+	.serviciosInf{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 2.5em;
+	}
+
+	.row{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.sombra{
+		text-shadow: 1px 1px #ddd;
+	}
+
+	.recuadroSombra{
+		-webkit-box-shadow: inset 0px 0px 23px -11px rgba(0,0,0,0.56);
+		-moz-box-shadow: inset 0px 0px 23px -11px rgba(0,0,0,0.56);
+		box-shadow: inset 0px 0px 23px -11px rgba(0,0,0,0.56);
+		padding: 15px;
+		margin: 15px;
+	}
+
+	.imgProductos{
+		width: 90%;
+		text-align: center;
+	}
+
+	.ancho{
+		width: 100%;
+	}
+
+
+/* nativo */
+
+@media screen and (min-width: 320px) {
+
+	.serviciosInf{
+		font-size: 1.5em;
+		padding: 10px;
+	}
+
+
+	.header{
+		width: 100%;
+		height: 200px;
+		background-image: url(../img/dev.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: auto auto;
+	}
+
+	.flecha{
+		display: none;
+	}
+
+	.recuadro{
+		border-radius:0px;
+		border:none;
+		background:none;
+		margin:0px;
+		padding:0px;
+	}
+
+	.servicios{
+		font-family: 'Kalam', cursive;
+		font-size:2em;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 2px 2px #000;
+	}
+
+	.descripcion{
+		font-size: 1em;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.sitiosweb, .sistemasweb, .catalogosweb{
+		border:1px solid #fff;
+	}
+
+	.sitiosweb:hover, .sistemasweb:hover, .catalogosweb:hover{
+		border:1px solid #ccc;
+		cursor: pointer;
+	}
+
+	.frase{
+		background-color: #139ae7;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 10px;
+		border:2px solid #1c739e;
+		color:#fff;
+	}
+
+	.titulo, .alert{
+		font-family: 'Kalam', cursive;
+		color: tomato;
+		padding: 10px;
+	}
+
+	.inicia{
+		font-size: 1.55em;
+		font-family: 'Kalam', cursive;
+	}
+
+	.opcion01,  .opcion02, .opcion03{
+		border:1px solid #fff;
+		padding: 20px;
+		margin: 0 auto;
+	}
+
+	.opcion01:hover,  .opcion02:hover, .opcion03:hover{
+		border:1px solid #ccc;
+		padding: 20px;
+		margin: 0 auto;
+		-webkit-box-shadow: inset 0px 0px 23px -11px rgba(0,0,0,0.56);
+		-moz-box-shadow: inset 0px 0px 23px -11px rgba(0,0,0,0.56);
+		box-shadow: inset 0px 0px 23px -11px rgba(0,0,0,0.56);
+	}
+
+	.texto{
+		font-size: 1.3em;
+	}
+
+	.panel-body{
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.detalle{
+		margin:0 auto;
+		padding: 20px;
+	}
+	
+}
+
+@media screen and (min-width: 980px){
+
+	.header{
+		height: 400px;
+		background-size: 100% auto;
+	}
+
+	.serinf{
+		text-align: left;
+		font-weight: bold;
+		margin-left: 100px;
+	}	
+
+	.recuadro{
+		border-radius:15px;
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+		background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+		background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+		background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+		background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+		background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+		padding:1px;
+	}
+
+	.inicia{
+		font-size: 3.65em;
+	}
+
+	.sitiosweb, .sistemasweb, .catalogosweb{
+		border:1px solid #fff;
+		max-height: 160px;
+		text-align: center;
+		width: 350px;
+	}
+
+	.servicios{
+		font-size:2.5em;
+		text-align: left;
+	}
+
+	.descripcion{
+		font-size: 1.5em;
+	}
+
+	.flecha{
+		display: block;
+		float: left;
+	}
+
+	.productos{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.texto{
+		font-size: 1.5em;
+	}
+
+	.btn-warning{
+		font-size: 1.5em;
+	}
+
+	.detalle{
+		width: 90%;
+	}
+
+	.opciones{
+		width: 90%;
+		height: 250px;
+		padding: 10px;
+	}
+
+}
